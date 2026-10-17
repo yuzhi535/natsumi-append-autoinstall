@@ -1,4 +1,4 @@
-# Natsumi Append 一键修复
+# Natsumi Append 一键安装 / 修复
 
 Firefox 更新会覆盖程序目录，删掉 Natsumi Append 依赖的 fx-autoconfig 文件，导致 `Customize Natsumi` 设置页消失。
 
@@ -13,7 +13,7 @@ Firefox 更新会覆盖程序目录，删掉 Natsumi Append 依赖的 fx-autocon
 ## macOS
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/yuzhi535/natsumi-append-reapply/main/macos.sh -o /tmp/natsumi-reapply.sh
+curl -fsSL https://raw.githubusercontent.com/yuzhi535/natsumi-append-autoinstall/main/macos.sh -o /tmp/natsumi-reapply.sh
 bash /tmp/natsumi-reapply.sh
 ```
 
@@ -36,7 +36,7 @@ bash /tmp/natsumi-reapply.sh --dry-run
 以管理员身份打开 PowerShell：
 
 ```powershell
-irm https://raw.githubusercontent.com/yuzhi535/natsumi-append-reapply/main/windows.ps1 -OutFile $env:TEMP\natsumi-reapply.ps1
+irm https://raw.githubusercontent.com/yuzhi535/natsumi-append-autoinstall/main/windows.ps1 -OutFile $env:TEMP\natsumi-reapply.ps1
 powershell -ExecutionPolicy Bypass -File $env:TEMP\natsumi-reapply.ps1
 ```
 
